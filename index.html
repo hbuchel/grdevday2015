@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Your deck.js Presentation</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+  <link rel="stylesheet" media="screen" href="extensions/prism/prism.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/svg.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/fade.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <div class="flex">
+        <div class="flex__content">
+          <h1 class="talk">
+            <span class="talk__beautiful">
+              A Beautifully-Modern Web
+            </span>
+            <span class="talk__with">
+              With
+            </span>
+            <span class="talk__svg">
+              SVG
+            </span>
+          </h1>
+        </div>
+        <div class="flex__footer">
+          <h2>
+            <span class="reg">Presented by:</span> Heather Buchel
+          </h2>
+          <hr />
+          <span class="label">Slides & Resources</span><br/>
+          <span class="value">svgdevday.github.io</span>
+
+        </div>
+      </div>
+      
+
+    </section>
+
+    <section class="slide">
+      <div class="flex">
+        <div class="flex__content">
+          <div class="block">
+            <h1 class="title--large">Heather Buchel</h1>
+            <h2>Front-End Developer & UI Designer</h2>
+          </div>
+          <hr/>
+          <div class="grids">
+            <div class="grid">
+              <svg class="icon" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                <path id="twitter-icon" d="M462,128.223c-15.158,6.724-31.449,11.269-48.547,13.31c17.449-10.461,30.854-27.025,37.164-46.764 c-16.333,9.687-34.422,16.721-53.676,20.511c-15.418-16.428-37.386-26.691-61.698-26.691c-54.56,0-94.668,50.916-82.337,103.787 c-70.25-3.524-132.534-37.177-174.223-88.314c-22.142,37.983-11.485,87.691,26.158,112.85c-13.854-0.438-26.891-4.241-38.285-10.574 c-0.917,39.162,27.146,75.781,67.795,83.949c-11.896,3.237-24.926,3.978-38.17,1.447c10.754,33.58,41.972,58.018,78.96,58.699 C139.604,378.282,94.846,390.721,50,385.436c37.406,23.982,81.837,37.977,129.571,37.977c156.932,0,245.595-132.551,240.251-251.435 C436.339,160.061,450.668,145.174,462,128.223z"/>
+              </svg>
+              @hbuchel
+            </div>
+            <div class="grid">
+              <svg class="icon" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <path id="github-icon" d="M256,55.083c-113.764,0-206,92.237-206,206
+                  c0,91.013,59.025,168.246,140.887,195.472c10.293,1.911,13.613-4.459,13.613-9.908v-38.356C147.199,420.764,135.262,384,135.262,384
+                  c-9.354-23.822-22.865-30.159-22.865-30.159c-18.693-12.774,1.408-12.523,1.408-12.523c20.688,1.459,31.584,21.24,31.584,21.24
+                  c18.373,31.483,48.18,22.381,59.949,17.117c1.844-13.312,7.174-22.397,13.076-27.544c-45.768-5.197-93.848-22.867-93.848-101.81
+                  c0-22.498,8.047-40.872,21.225-55.289c-2.146-5.197-9.188-26.152,1.979-54.518c0,0,17.301-5.532,56.662,21.123
+                  c16.445-4.56,34.066-6.856,51.568-6.94c17.502,0.084,35.154,2.381,51.6,6.94c39.33-26.655,56.596-21.123,56.596-21.123
+                  c11.217,28.365,4.158,49.32,2.029,54.518c13.211,14.417,21.207,32.791,21.207,55.289c0,79.127-48.197,96.545-94.064,101.642
+                  c7.375,6.388,14.133,18.943,14.133,38.155c0,27.561,0,49.757,0,56.529c0,5.482,3.301,11.903,13.746,9.892
+                  C403.057,429.264,462,352.08,462,261.084C462,147.321,369.762,55.083,256,55.083z"/>
+              </svg>
+              github.com/hbuchel
+            </div>
+            <div class="grid">
+              <svg class="icon" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><path class="outer-ring" d="M60.048 0C26.884 0 0 26.9 0 60.048s26.884 60 60 60.047c33.163 0 60.047-26.883 60.047-60.047 S93.211 0 60 0z M60.048 110.233c-27.673 0-50.186-22.514-50.186-50.186S32.375 9.9 60 9.9 c27.672 0 50.2 22.5 50.2 50.186S87.72 110.2 60 110.233z" fill="#111"/><path class="inner-box" d="M97.147 48.319c-0.007-0.047-0.019-0.092-0.026-0.139c-0.016-0.09-0.032-0.18-0.056-0.268 c-0.014-0.053-0.033-0.104-0.05-0.154c-0.025-0.078-0.051-0.156-0.082-0.232c-0.021-0.053-0.047-0.105-0.071-0.156 c-0.033-0.072-0.068-0.143-0.108-0.211c-0.029-0.051-0.061-0.1-0.091-0.148c-0.043-0.066-0.087-0.131-0.135-0.193 c-0.035-0.047-0.072-0.094-0.109-0.139c-0.051-0.059-0.104-0.117-0.159-0.172c-0.042-0.043-0.083-0.086-0.127-0.125 c-0.059-0.053-0.119-0.104-0.181-0.152c-0.048-0.037-0.095-0.074-0.145-0.109c-0.019-0.012-0.035-0.027-0.053-0.039L61.817 23.5 c-1.072-0.715-2.468-0.715-3.54 0L24.34 46.081c-0.018 0.012-0.034 0.027-0.053 0.039c-0.05 0.035-0.097 0.072-0.144 0.1 c-0.062 0.049-0.123 0.1-0.181 0.152c-0.045 0.039-0.086 0.082-0.128 0.125c-0.056 0.055-0.108 0.113-0.158 0.2 c-0.038 0.045-0.075 0.092-0.11 0.139c-0.047 0.062-0.092 0.127-0.134 0.193c-0.032 0.049-0.062 0.098-0.092 0.1 c-0.039 0.068-0.074 0.139-0.108 0.211c-0.024 0.051-0.05 0.104-0.071 0.156c-0.031 0.076-0.057 0.154-0.082 0.2 c-0.017 0.051-0.035 0.102-0.05 0.154c-0.023 0.088-0.039 0.178-0.056 0.268c-0.008 0.047-0.02 0.092-0.025 0.1 c-0.019 0.137-0.029 0.275-0.029 0.416V71.36c0 0.1 0 0.3 0 0.418c0.006 0 0 0.1 0 0.1 c0.017 0.1 0 0.2 0.1 0.268c0.015 0.1 0 0.1 0.1 0.154c0.025 0.1 0.1 0.2 0.1 0.2 c0.021 0.1 0 0.1 0.1 0.154c0.034 0.1 0.1 0.1 0.1 0.213c0.029 0 0.1 0.1 0.1 0.1 c0.042 0.1 0.1 0.1 0.1 0.193c0.035 0 0.1 0.1 0.1 0.139c0.05 0.1 0.1 0.1 0.2 0.2 c0.042 0 0.1 0.1 0.1 0.125c0.058 0.1 0.1 0.1 0.2 0.152c0.047 0 0.1 0.1 0.1 0.1 c0.019 0 0 0 0.1 0.039L58.277 96.64c0.536 0.4 1.2 0.5 1.8 0.537c0.616 0 1.233-0.18 1.77-0.537 l33.938-22.625c0.018-0.012 0.034-0.027 0.053-0.039c0.05-0.035 0.097-0.072 0.145-0.109c0.062-0.049 0.122-0.1 0.181-0.152 c0.044-0.039 0.085-0.082 0.127-0.125c0.056-0.055 0.108-0.113 0.159-0.172c0.037-0.045 0.074-0.09 0.109-0.139 c0.048-0.062 0.092-0.127 0.135-0.193c0.03-0.049 0.062-0.098 0.091-0.146c0.04-0.07 0.075-0.141 0.108-0.213 c0.024-0.051 0.05-0.102 0.071-0.154c0.031-0.078 0.057-0.156 0.082-0.234c0.017-0.051 0.036-0.102 0.05-0.154 c0.023-0.088 0.04-0.178 0.056-0.268c0.008-0.045 0.02-0.092 0.026-0.137c0.018-0.139 0.028-0.277 0.028-0.418V48.735 C97.176 48.6 97.2 48.5 97.1 48.319z M63.238 32.073l25.001 16.666L77.072 56.21l-13.834-9.254V32.073z M56.856 32.1 v14.883L43.023 56.21l-11.168-7.471L56.856 32.073z M29.301 54.708l7.983 5.34l-7.983 5.34V54.708z M56.856 88.022L31.855 71.4 l11.168-7.469l13.833 9.252V88.022z M60.048 67.597l-11.286-7.549l11.286-7.549l11.285 7.549L60.048 67.597z M63.238 88.022V73.14 l13.834-9.252l11.167 7.469L63.238 88.022z M90.794 65.388l-7.982-5.34l7.982-5.34V65.388z" fill="#111" /></svg>
+              codepen.io/hbuchel
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="slide">
+      <div class="flex">
+        <div class="flex__header">
+          <h1 class="slide-title">A trip down memory lane...</h1>
+        </div>
+        <div class="flex__content">
+          <div class="grids">
+            <div class="grid">
+              
+                <h2 class="align-center">The good ole years</h2>
+                <svg class="icon--medium" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                  <path fill="currentColor" id="computer-6-icon" d="M164.936,363.9l-30.159,30.158h143.96L248.575,363.9H164.936z M363.304,346.072H50.209V117.941
+                  h313.095V346.072z M333.145,315.916V148.1l-252.777,0.002l0.002,167.814H333.145z M391.791,393.057h70V178.531h-70V393.057z
+                  M435.041,316.084c0,4.557-3.693,8.25-8.25,8.25s-8.25-3.693-8.25-8.25s3.693-8.25,8.25-8.25S435.041,311.527,435.041,316.084z
+                  M434.291,207.936v76.338h-15v-76.338H434.291z"/>
+                </svg>
+                <p class="align-center">
+                  One image to rule them all.
+                </p>
+             
+            </div>
+            <div class="grid">
+              <section class="slide">
+                <div class="centerer">
+                  <div class="align-center">
+                    <img src="/images/sprite-base.png" width="300" />
+                    <br/>(3kb)
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div class="flex">
+        <div class="flex__content">
+          <pre><code class="language-css">
+.icon {
+  background: url("images/sprite-base.png");
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+.icon--save {
+  background-position: 0 0;
+}
+.icon--delete {
+  background-position: 0 -32px;
+}
+.icon--add {
+  background-position: 0 -64px;
+}
+.icon--event {
+  background-position: 0 -96px;
+}
+            
+          </code></pre>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      
+      <div class="flex">
+        <div class="flex__header">
+          <h1 class="slide-title">
+            Then along came the iphone 4 with it's shiny new "Retina" screen, packing twice the amount of device pixels into the same size of our css pixels.
+          </h1>
+        </div>
+        <div class="flex__content">
+          <div class="grids">
+            <div class="grid">
+              <h2 class="align-center">iPhone 4</h2>
+              <svg class="icon--medium" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                <path fill="currentColor" id="smartphone-4-icon" d="M334.832,50H177.168c-18.227,0-33,14.774-33,33v346c0,18.226,14.773,33,33,33h157.664
+                  c18.227,0,33-14.774,33-33V83C367.832,64.774,353.059,50,334.832,50z M238.5,80.222h37c2.209,0,4,1.791,4,4s-1.791,4-4,4h-37
+                  c-2.209,0-4-1.791-4-4S236.291,80.222,238.5,80.222z M257.002,443.056c-8.838,0-16-7.163-16-16s7.162-16,16-16
+                  c8.834,0,16,7.163,16,16S265.836,443.056,257.002,443.056z M342.75,393.75H169.252v-275.5H342.75V393.75z"/>
+              </svg>
+            </div>
+            <div class="grid">
+              <section class="slide">
+                <div class="centerer">
+                  <div class="align-center">
+                    <img src="/images/sprite-base.png" width="300" /><br/>
+                    (3kb)<br/>
+                    <img src="/images/sprite-base@2x.png" width="600" /><br/>
+                    (7kb)
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="slide">
+      <div class="flex">
+        <div class="flex__header">
+          <h1 class="slide-title">We can handle this.</h1>
+        </div>
+        <div class="flex__content">
+          <pre><code class="language-css">
+@media (-webkit-min-device-pixel-ratio : 2) {
+  .icon {
+    background-image: url(sprite-base@2x.png);
+    background-size: 32px 32px;
+  }
+}
+          </code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="flex">
+        <div class="flex__header">
+          <h1 class="slide-title">
+            Then this happened
+          </h1>
+        </div>
+        <div class="flex__content">
+          [iphone, samsung galaxys4]
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="flex">
+        <div class="flex__header">
+          <h1 class="slide-title">
+            Ok, I guess we can manage...
+          </h1>
+        </div>
+        <div class="flex__content">
+          <pre><code class="language-css">
+@media (-webkit-min-device-pixel-ratio : 2) {
+  .icon {
+    background-image: url(image@2x.png);
+  }
+}
+          </code></pre>
+          <pre><code class="language-css">
+@media (-webkit-min-device-pixel-ratio : 3) {
+  .icon {
+    background-image: url(image@2x.png);
+  }
+}
+          </code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="flex">
+        <div class="flex__header">
+          <h1 class="slide-title">
+            Now our sprites look like this...
+          </h1>
+        </div>
+        <div class="flex__content">
+          [ img of different sprites, 3 total]
+        </div>
+        <div class="flex__footer">
+          * You could probably get away with 2 sprite files and be "ok".
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="flex">
+        <div class="flex__header">
+          <h1 class="slide-title">
+            Things are getting out of control...
+          </h1>
+        </div>
+        <div class="flex__content">
+          <div class="block align-center">
+            <img src="/images/android_size.png" width="586" height="346" />
+            <br/>http://opensignal.com/reports/fragmentation.php
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      It's not just "mobile", high-res screens are becoming commonplace for laptops.
+    </section>
+
+    <section class="slide">
+      <h1>This could mean maintaining 4 different version of your icons or sprite files.</h1>
+      <p>images of sprite files and file sizes</p>
+    </section>
+
+    <section class="slide">
+      <h1>Please halp gif</h1>
+    </section>
+
+    <section class="slide">
+      Let's face it, using jpgs, pngs or gifs for icon sprites are a clunky and messy choice.
+    </section>
+
+    
+
+    <section class="slide">
+      <h1>Enter SVG!</h1>
+      <p>Actually they're from 1999 but now they're used in slick modern ways that will make every designer happy.</p>
+    </section>
+
+    <section class="slide">
+      <div class="flex">
+        <div class="flex__header">
+          <h1 class="slide-title">You can create them with code or with programs such as Sketch or adobe illustrator.</h1>
+        </div>
+        <div class="flex__content">
+          <div class="grids">
+            <div class="grid">
+              <img src="/images/diamond.svg" />
+            </div>
+            <div class="grid-2">
+              <pre data-src="/images/diamond.svg"></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="align-center">
+        <img src="/images/diamond.svg" width="100" />
+        <img src="/images/diamond.svg" width="300" />
+        <img src="/images/diamond.svg" width="600" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="flex">
+        <div class="flex__header">
+          <h1 class="slide-title">
+            Browser Support
+          </h1>
+        </div>
+        <div class="flex__content">
+          <div class="align-center">
+            <img src="/images/ie8.svg" width="700" />
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h1>SVG's can be used inline, right inside of our html</h1>
+      <svg><!-- svg code --></svg>
+    </section>
+
+    <section class="slide">
+      <h1>You can style inline SVG's with CSS!</h1>
+    </section>
+
+    <section class="slide">
+      <h1>SVG's can be used as an img src (what is the real name for this)</h1>
+      <img src="test.svg"></section>
+    </section>
+
+    <section class="slide">
+      <h1>SVG can be used as a background image.</h1>
+    </section>
+
+    <section class="slide">
+      <h1>You can make sprites out of SVG's just like other image types!</h1>
+      <p>Basic example with classes and shit.</p>
+    </section>
+
+    <section class="slide">
+      <h1>Inline SVG's can be referenced elsewhere</h1>
+      <svg><x:link use></svg>
+      <p>More on how this is awesome later</p>
+    </section>
+
+    <section class="slide">
+      <h1>You can use inline svg sprites</h1>
+      <p>Example with symbol element and viewboxes.</p>
+    </section>
+
+    <section class="slide">
+      <h1>Cool ways we can style with currentColor</h1>
+    </section>
+
+    <section class="slide">
+      Inline SVG's can be fixed width....
+    </section>
+    <section class="slide">
+      or they can be responsive....
+    </section>
+    <section class="slide">
+      worth noting the cray cray you need to do for ie to make them responsive.
+    </section>
+    <section class="slide">
+      <h1>SVG optimization</h1>
+      <p>Ever look at the markup for the SVG you made in illustrator or sketch?</p>
+      <p>
+        Show crazy extra html and how big it is. (filesize)
+      </p>
+    </section>
+    <section class="slide">
+      <h1>Manually Optimized SVG</h1>
+      <p>If you go through and strip out all the extra stuff, this is what yo u get (show filesize)</p>
+    </section>
+    <section class="slide">
+      <h1>Automatied SVG Optimization</h1>
+      <p>Show SVGO (command line utility)</p>
+    </section>
+    <section class="slide">
+      <h1>Boo commandline?</h1>
+      <p>Show https://github.com/svg/svgo-gui</p>
+      <p>(really you should get used to using commandline for this type of stuff though because.... read on)</p>
+    </section>
+    <section class="slide">
+      <h1>Compare our optimized svg filesize to our multiple png sprites</h1>
+    </section>
+    <section class="slide">
+      That's great for single SVG's, but we want to use a sprite so we can save on http requests and have even smaller file sizes!
+    </section>
+    <section class="slide">
+      <h1>Enter Gulp! (or Grunt!)</h1>
+      <p>node based task runners that will perform some automation for us</p>
+      Don't worry, most of these plugins are available in some form or another for both.
+    </section>
+    <section class="slide">
+      <h1>Gulp SVG sprite example</h1>
+    </section>
+
+    <section class="slide">
+      <h1>Automating our stacked svg symbol options</h1>
+      gulp svg-store
+      gulp inject
+    </section>
+
+
+
+
+
+    <section class="slide">
+      Scalable Vector Graphics (SVG) is an XML markup language for describing two-dimensional vector graphics. 
+    </section>
+    <section class="slide">
+      What that means to us front-end developer folks is that we can write code similar to what XML looks like you might have seen before to describe how our SVG looks.
+
+    </section>
+    <section class="slide">
+      What that means to us designerey folks is that since it's vector-based, our images can scale up or down and not lose their quality or get pixelated looking and blurry.
+
+    </section>
+    <section class="slide">
+      At the most basic code level, SVG's are made of different shapes. They can be circles, rectangles, polygons, paths, lines, or text. 
+    </section>
+
+    <section class="slide">
+      Those are probably the most recognizable elements you'll see if you inspect an SVG. If you check out the mozilla developer docs, you'll find a complete list. https://developer.mozilla.org/en-US/docs/Web/SVG/Element I'm not going to describe every element available but I do think it's worth while to attempt creating your own SVG's and inspecting the code generated by them by opening them up in Sublime or whatever text editor it is that you use.
+    </section>
+
+    <section class="slide">
+      
+      How can we create them? Well, you can painstakingly write out all of the code for them yourself, which I don't really recommend unless you're really well versed in how the path notation works. Or you can use a graphics program such as Adobe Illustrator (probably the most expensive option), Sketch (which is my favorite but sadly only avialable for Macs), or Inkscape (which is free and what I use on ubuntu when I'm in that environment). Illustrator is probably the most advanced for creating really complex designs, Sketch is maybe for more simple icon design but also amazing for interface design as a whole, and Inkscape is great if you really like getting into the nitty gritty of SVG code because it has a nice little window that shows your code as you create your shapes and edit them.
+    </section>
+
+    <section class="slide">
+      Really, all that matters is finding a program that works for you and supports the .svg file format.
+    </section>
+
+
+    <section class="slide">
+      Before we get into how we can use SVGs in our projects, let's talk briefly about browser support. For your most basic SVG use cases, you will be ok unless you have to support IE8, or Android prior to 4.1. There are ways to automate png fallbacks for our svg's that we'll talk about later but if you need to support those browsers, be prepared to do some research and make some decisions  about if you think it's worth the effort. Maybe SVG's aren't the right fit for older projects.
+    </section>
+
+    <section class="slide">
+      At GW, when we were supporting IE8, we were also looking forward. So we use modernizr on almost all of our projects to detect support for SVG. [ show picture of modernizr custom build ] If you create a custom build you can check the svg options under misc. Then you'll get some tools for css and javascript to load in fallbacks or create alternate css.
+
+    </section>
+
+    <section class="slide">
+      So how can we use SVG's in place of our boring old pngs? Well you can use them as the source of an img tag much like you would any other image. [ show code for using img tag]. no matter how you use an svg, you still get the benefit of it scaling just like you would expect a vector image. [ show example of 3 different img tags with the same svg source and different widths]. Expands just like setting the width and height on an img tag that references a jpg but we don't get the blurry or pixelatedness that we would with other image formats.
+
+      Also, for all of these use cases we'll go over, the same SVG will look just as great on a 4x screen as it will on a non-high resolution screen. We don't need our min-resolution media queries anymore.
+    </section>
+
+    <section class="slide">
+      The code for our SVG's fits right into our markup so you can place all of your SVG code inline. [ show inline svg markup with html]. We can even use our title element for our svg and give it a nice title that will be read when a screenreader tabs to our svg, much like alt text on an image.
+    </section>
+
+    <section class="slide">
+      You'll notice our SVG markup has a width and height attribute set. This is something you'll want to pay attention to because just like setting a fixed width and height on an image, those attribute will restrict our svg from expanding or shrinking in, say, a responsive design. So sometimes, you may want those fixed dimensions, but if we want our SVG to be responsive we can use those dimensions for our viewbox instead. [ show image of dimensions grayed out but new viewbox being used ] We can use those width and height attribute to determine our viewport starting at the top left most part of our svg's "canvas" and drawing a rectangle to the right-most and bottom-most point.
+    </section>
+
+    <section class="slide">
+      Now, in a responsive site, since we don't have those fixed dimensions anymore, we can scale the svg using a percentage.
+    </section>
+
+    <section class="slide">
+      Heres one of those quirks where I said the basic support is there, but you'll still have to do some tweaking for IE in particular. IE will actually collapse all SVG's to be 150px height regardless of their viewbox if there is no width and height attributes set. There is a workaround, though. For Internet Explorer, you'll have to wrap your responsive svg's in another element and use what other's have called the padding-hack. 
+
+      In our markup, create a .svg-wrap div and place your svg inside of it.
+
+      Then show css of padding hack.
+
+      Obviously, you'll have to manage these from image to image if you are using different height svg's all over the place.
+    </section>
+  
+    <section class="slide">
+      There is a great article with a more thorough explanation I highly recommend reading if you come across issues making your SVG's responsive with a lot of different techniques. [link to codrops] You definitely want to make sure you do some research and know what kind of browser support your project needs.
+    </section>
+
+    <section class="slide">
+      Another great thing about inline svg's, is that we can actually style the inner svg elements with CSS. This means you can do simple things like adding hover effects...
+    </section>
+
+    <section class="slide">
+      or more advanced techniques with css3 animations.
+    </section>
+
+    <section class="slide">
+      Sidenote: SVG also has it's own animation system called SMIL (synchronized multimedia integration language). You can do some pretty cool things with it. [ show loading animation on codepen ] Unfortunately the browser support just isn't there. No version of internet explorer currently supports SMIL so it's almost preferrable, at least in my opinion, to just use a javascript library for that sort of thing. Snap.svg is one of my favorites 
+
+    </section>
+
+    <section class="slide">
+      Sprites!
+
+      This is where we get the real mileage with SVG. We can create SVG sprites the same way we create sprites with other file formats. We use svg sprites for the same reason we used our old bitmap sprites, typically a smaller total combined file size for all of our icons and less http requests which helps with performance.
+    </section>
+
+
+    <section class="slide">
+      
+      Take for example the following icons converted into one svg. Our SVG code will look something like this, probably with each icon in it's own group.
+    </section>
+
+    <section class="slide">
+      Then, in our css, we can reference the svg as our background image.
+
+      The one caveat to this technique for using svg's, is we can't style the inner svg elements with CSS like we can with our inline svg's. But if you're making your own icon system this is a very easy starting point that's easily adaptable from our older bitmap spriting techniques, and now we no longer need 2x or 4x files for high-resolution screens.
+
+      I've probably used this technique a lot.
+    </section>
+
+    <section class="slide">
+      My favorite "newest" technique for SVG spriting is what I'll call "inline spriting". Before we talked about how we could write inline SVG's. Well we can take our SVG sprite that we created and place that in our markup. Let's place it at the bottom of our template.
+    </section>
+
+    <section class="slide">
+       Now we want to be able to reference each little icon on it's own. So let's wrap each element in it's own symbol element and give each of them it's own unique ID. The MDN describes the svg symbol element as a way to define graphical template objects which can be instantiated by a <use> element. This also means that our symbol element itself is not rendered, only instances of it are rendered.
+    </section>
+ 
+    <section class="slide">
+       Before we get to the <use> element, let's take care of some responsiveness. Let's move the viewbox onto each symbol element and let it equal the viewbox for that individual icon, instead of the entire svg. Now we've created a symbol out of each icon, and we can reference that elsewhere using the <use> element. this is going to be handy because, unlike this very basic example, our svg path's are usually going to be pretty complex. It's a lot of markup to kind of weed through and paste everywhere we want that icon.
+    </section>
+
+    <section class="slide">
+      
+      If we go back up to our HTMl, we can create a simpler way for us to reference this icon. Say we want our square icon to show up. We'll create a wrapper, because for IE we're going to need that anyways.
+      <div class="icon"></div> (test if I need this for IE)
+    </section>
+
+    <section class="slide">
+      Then we'll add our SVG code.
+
+       <div class="icon">
+         <svg>
+           <use xlink:href="#square" />
+         </svg>
+       </div>
+
+
+        This is a little more markup then we would need for our background image svg sprites. BUT now we can do some cool things with recoloring it that we definitely couldn't do before with our older spriting techniques.
+    </section>
+
+    <section class="slide">
+      If you set the fill of your path elements to currentColor, you can very easily restyle them with just the color property in your css. This is kind of cool for making the icon immediately take on the color of it's parent link, for example.
+    </section>
+
+
+    <section class="slide">
+      
+ See if we can do other things to css-ify these <use> svg's.
+
+    </section>
+
+    <section class="slide">
+      We can also reference those SVG's as an external file which will keep our templates a bit cleaner especially if you have really large sprite files. Show IE svg thing.
+    </section>
+
+
+    <section class="slide">
+       So, now we've hit on a couple of wonderful, real use case examples for using SVG's. How do we make it easier?
+    </section>
+
+
+    <section class="slide">
+       One thing you might immediately notice is that when you create an SVG with a graphics program, that program will embed all of it's proprietary namespaces. These really have no use for us or our browser, so we'll want to strip them away.
+
+       Take this svg for example:
+
+       [ bloated svg]
+
+       Could easily become this:
+
+       [not-so-bloated svg]
+    </section>
+
+    <section class="slide">
+       Why is this important? ALl that extra text we removed results in smaller file sizes, and we should always be doing these small performance gains just like how we should compress our jpegs and gifs and pngs. There is no reason not to do it. It's osmething we easily have control over.
+    </section>
+
+    <section class="slide">
+      We can do that manually. OR we can get a little help from SVGO.
+
+ So this is where the front-end developer part of me gets excited because now we get to talk performance and automation. SVGO is a node-based command line utility for optimizing SVGs. If you're not familiar with Node, I like to think of it as heavy-lifting javascript. What before we would use back-end languages like PHP or C# for, node let's us do those tasks with javascript. If that sounds scary to you, try not to be scared. Whenever we hire a new front-end developer at gravity works, we always show them the "command line" way first, and it's like an entire new world opens up to them. I've found there is great documentation to go along with all of the node packages I've found, including SVGO.
+    </section>
+
+
+    <section class="slide">
+       Show example of using svgo? ):
+
+        there are a ton more options, so you'll definitely want to look into those a bit more. It is possible to OVER optimize something and you don't want that.
+    </section>
+ 
+
+    <section class="slide">
+       Along with node, my team likes to use gulp. Where node does our heavy lifting, gulp let's us create little tasks that we can have our node modules do. You can create one task that does several other tasks and you can pipe them together so they do one task after another. You can watch files for changes to them which is great becuase then those changes can trigger one of our tasks. It's kind of amazing but remember, don't look to task runners or node modules to do BETTER work for you, get them to actually fit into your workflow and make you work more efficiently. Basically don't use a task runner because you think it's the hot new ish, use it because you have pain points in your work flow. Please checkout gulpjs.com if you want a really thorough explanation.
+    </section>
+
+    <section class="slide">
+       By the way, almost all of the node modules I've needed have had a grunt equivalent so don't fret if your team primarily uses Grunt.
+    </section>
+
+    <section class="slide">
+       One of those pain points could be optimizing SVG's after you create them with Illustrator or sketch. If you're manually optimizing, it's going to get really annoying if you have to edit your SVG and illustrator re'adds all of those namespaces back in. We can wire up gulp to to use svgo automatically whenever we save a new version of that file.
+    </section>
+
+    <section class="slide">
+       First I setup my directory. Usually I have a source folder, /source/images
+. Then maybe I have my production ready iamges folder, the images I actually want to push up to my app or my server inside of  /app/images. THe idea here is that I save all of my illustrator svg's inside of this source folder, we run svgo with gulp, and put the new version into the app images folder and these are the files that actually get referenced in our css or DOM.
+    </section>
+ 
+    <section class="slide">
+      So our gulpfile and task will look something like this....
+We'll open up command line and run our task.
+    </section>
+
+
+    <section class="slide">
+      
+CSS sprites are annoying. I hate aligning all of the SVG's. I hate calculating and writing out all of the background positions for the sprites. Wouldn't it be great if we could just dump all of our indiviual svg icon's into one folder and magic elves would come along and create one big svg sprite file out of all of them? Well we can do that with gulp.
+    </section>
+
+
+
+    <section class="slide">
+      Here I have a folder with a bunch of SVG's in it.
+    </section>
+
+    <section class="slide">
+      And I have my gulpfile which is loading another node module called gulp-svg-sprite.
+
+    </section>
+
+    <section class="slide">
+      So if I go to my command line and run my sprite task, the output I get is this nice SVG sprite AND it will also create a css file for me with classes that automatically reference the proper dimensions and background-position for each image. 
+
+      So I've effectively taken out all of the steps for lining up a sprite file, optimizing it, and creating all of the css and classes for it.
+
+    </section>
+
+
+    <section class="slide">
+      Want to use inline SVG spriting? We can use gulp-svgstore and gulp-inject for that. Gulp svgstore is going to create an svg file just like our sprite task before did, but now it's going to split everything up into symbols for us. Remember, that's not something that illustrator will do for you by default.
+    </section>
+
+
+
+    <section class="slide">
+      So just like before, We have a source folder of SVG icons.
+    </section>
+
+    <section class="slide">
+      If we look at our gulpfile, this time I'm going to setup a watch task. Our watch tasks is going to watch the files inside of this specific folder for changes. When it detects a change, it's going to run the specified task, which in this case is our symbols task.
+
+    </section>
+
+    <section class="slide">
+      
+    </section>
+
+
+
+
+
+
+    
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+<script src="extensions/prism/prism.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
