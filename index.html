@@ -37,6 +37,7 @@
 
     <!-- Begin slides. Just make elements with a class of slide. -->
 
+    <!--
     <section class="slide">
       <div class="flex">
         <div class="flex__content">
@@ -361,7 +362,7 @@
 
     <section class="slide">
       <h1>SVG's can be used inline, right inside of our html</h1>
-      <svg><!-- svg code --></svg>
+      <svg>svg code</svg>
     </section>
 
     <section class="slide">
@@ -446,24 +447,77 @@
       gulp svg-store
       gulp inject
     </section>
-
+    -->
 
 
 
 
     <section class="slide">
-      Scalable Vector Graphics (SVG) is an XML markup language for describing two-dimensional vector graphics. 
+      <div class="grids">
+        <div class="grid">
+
+        </div>
+        <div class="grid centerer">
+          <div class="text--large">Scalable Vector Graphics (SVG) is an XML markup language for describing two-dimensional vector graphics. </div>
+        </div>
+
+      </div>
+      
     </section>
     <section class="slide">
-      What that means to us front-end developer folks is that we can write code similar to what XML looks like you might have seen before to describe how our SVG looks.
+      <div class="grids">
+        <div class="grid">
+          
+        </div>
+        <div class="grid centerer">
+          <div class="subtext">For Front-End Developers</div>
+          <div class="text--large">
+            We can create SVGs with code similar to XML and HTML.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div class="grids">
+        <div class="grid">
+          
+        </div>
+        <div class="grid centerer">
+          <div class="subtext">For Designers</div>
+          <div class="text--large">
+            SVGs are vector-based. We won't end up with blurry or pixelated images, no matter our screen resolution.
+          </div>
+        </div>
+      </div>
+
 
     </section>
     <section class="slide">
-      What that means to us designerey folks is that since it's vector-based, our images can scale up or down and not lose their quality or get pixelated looking and blurry.
-
-    </section>
-    <section class="slide">
-      At the most basic code level, SVG's are made of different shapes. They can be circles, rectangles, polygons, paths, lines, or text. 
+      <div class="centerer">
+        SVG's are composed of different elements.
+        <div class="grids">
+          <div class="grid centerer">
+            <svg viewBox="0 0 200 200" class="max">
+                <circle id="Oval-1" class="fill-normal" cx="100" cy="100" r="100"></circle>
+            </svg>
+          </div>
+          <div class="grid centerer">
+            <svg viewBox="0 0 200 200" class="max">
+              <line x1="10" y1="10" x2="180" y2="180" class="stroke-normal" stroke-width="20"/>
+            </svg>
+          </div>
+          <div class="grid centerer">
+            <svg viewBox="0 0 120 120" class="max">
+              <rect x="0" y="40" width="200" class="fill-normal" height="120"/>
+            </svg>
+          </div>
+          <div class="grid centerer">
+            <svg viewPort="0 0 120 120" class="max">
+              <polygon class="fill-normal" points="60,20 100,40 100,80 60,100 20,80 20,40"/>
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="slide">
@@ -472,7 +526,17 @@
 
     <section class="slide">
       
-      How can we create them? Well, you can painstakingly write out all of the code for them yourself, which I don't really recommend unless you're really well versed in how the path notation works. Or you can use a graphics program such as Adobe Illustrator (probably the most expensive option), Sketch (which is my favorite but sadly only avialable for Macs), or Inkscape (which is free and what I use on ubuntu when I'm in that environment). Illustrator is probably the most advanced for creating really complex designs, Sketch is maybe for more simple icon design but also amazing for interface design as a whole, and Inkscape is great if you really like getting into the nitty gritty of SVG code because it has a nice little window that shows your code as you create your shapes and edit them.
+      <div class="grids">
+        <div class="grid centerer">
+          <img src="images/svg-ai.png" class="max" />
+        </div>
+        <div class="slide grid centerer">
+          <img src="images/svg-sketch.png" class="max" />
+        </div>
+        <div class="slide grid centerer">
+          <img src="images/svg-inkscape.png" class="max" />
+        </div>
+      </div>
     </section>
 
     <section class="slide">
@@ -481,48 +545,117 @@
 
 
     <section class="slide">
-      Before we get into how we can use SVGs in our projects, let's talk briefly about browser support. For your most basic SVG use cases, you will be ok unless you have to support IE8, or Android prior to 4.1. There are ways to automate png fallbacks for our svg's that we'll talk about later but if you need to support those browsers, be prepared to do some research and make some decisions  about if you think it's worth the effort. Maybe SVG's aren't the right fit for older projects.
+      <h1>Browser Support http://caniuse.com/#feat=svg</h1>
+      
+      <div class="grids">
+        <div class="grid centerer align-center">
+          <img src="images/ie8.svg" width="50%" />
+        </div>
+        <div class="slide grid centerer align-center">
+          <img src="images/android.svg" />
+        </div>
+      </div>
+
     </section>
 
     <section class="slide">
-      At GW, when we were supporting IE8, we were also looking forward. So we use modernizr on almost all of our projects to detect support for SVG. [ show picture of modernizr custom build ] If you create a custom build you can check the svg options under misc. Then you'll get some tools for css and javascript to load in fallbacks or create alternate css.
-
+      <h1>http://modernizr.com/download/</h1>
+      <div class="grids">
+        <div class="grid centerer">
+          <img src="images/modernizr.jpg" />
+        </div>
+        <div class="slide grid centerer align-center">
+          <img src="images/modernizr-options.png" width="50%" />
+        </div>
+      </div>
+      
     </section>
 
     <section class="slide">
-      So how can we use SVG's in place of our boring old pngs? Well you can use them as the source of an img tag much like you would any other image. [ show code for using img tag]. no matter how you use an svg, you still get the benefit of it scaling just like you would expect a vector image. [ show example of 3 different img tags with the same svg source and different widths]. Expands just like setting the width and height on an img tag that references a jpg but we don't get the blurry or pixelatedness that we would with other image formats.
-
-      Also, for all of these use cases we'll go over, the same SVG will look just as great on a 4x screen as it will on a non-high resolution screen. We don't need our min-resolution media queries anymore.
+      <div class="centerer">
+        <pre class="center-code"><code class="language-markup">
+&lt;img src="images/diamond.svg" /&gt;
+      </code></pre>
+      </div>
     </section>
 
     <section class="slide">
-      The code for our SVG's fits right into our markup so you can place all of your SVG code inline. [ show inline svg markup with html]. We can even use our title element for our svg and give it a nice title that will be read when a screenreader tabs to our svg, much like alt text on an image.
+     
+      <div class="grids">
+        <div class="grid centerer align-center">
+          <img src="images/diamond.svg" width="100" />
+        </div>
+        <div class="grid centerer align-center">
+          <img src="images/diamond.svg" width="70%" />
+        </div>
+        <div class="grid centerer align-center">
+          <img src="images/diamond.svg" width="390px" />
+        </div>
+      </div>
     </section>
 
     <section class="slide">
-      You'll notice our SVG markup has a width and height attribute set. This is something you'll want to pay attention to because just like setting a fixed width and height on an image, those attribute will restrict our svg from expanding or shrinking in, say, a responsive design. So sometimes, you may want those fixed dimensions, but if we want our SVG to be responsive we can use those dimensions for our viewbox instead. [ show image of dimensions grayed out but new viewbox being used ] We can use those width and height attribute to determine our viewport starting at the top left most part of our svg's "canvas" and drawing a rectangle to the right-most and bottom-most point.
+      <!-- The code for our SVG's fits right into our markup so you can place all of your SVG code inline. [ show inline svg markup with html]. We can even use our title element for our svg and give it a nice title that will be read when a screenreader tabs to our svg, much like alt text on an image. -->
+      <div class="centerer">
+        <pre class="language-markup"><code>
+&lt;html&gt;
+  &lt;body&gt;
+    ...
+    &lt;section class="row"&gt;
+      &lt;div class="column"&gt;
+        &lt;svg width="200" height="200" class="max"&gt;
+          &lt;polygon class="fill-normal" points="60,20 100,40 100,80 60,100 20,80 20,40"/&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+      </div>
     </section>
 
     <section class="slide">
-      Now, in a responsive site, since we don't have those fixed dimensions anymore, we can scale the svg using a percentage.
+      <div class="centerer">
+        <h1 class="align-center">DEMO: <a target="_blank" href=" http://codepen.io/hbuchel/pen/e28e67b41b1096aa0adcea587aaaecef?editors=110">Making SVG Responsive</a></h1>
+      </div>
     </section>
 
     <section class="slide">
-      Heres one of those quirks where I said the basic support is there, but you'll still have to do some tweaking for IE in particular. IE will actually collapse all SVG's to be 150px height regardless of their viewbox if there is no width and height attributes set. There is a workaround, though. For Internet Explorer, you'll have to wrap your responsive svg's in another element and use what other's have called the padding-hack. 
 
-      In our markup, create a .svg-wrap div and place your svg inside of it.
-
-      Then show css of padding hack.
-
-      Obviously, you'll have to manage these from image to image if you are using different height svg's all over the place.
+      <div class="centerer">
+        <h1 class="align-center">Thanks, IE</h1>
+        <img src="images/svg-ie-notrespond.svg" />
+      </div>
+    </section>
+    
+    <section class="slide">
+      <div class="centerer">
+        <h1 class="align-center">
+          DEMO: <a href="http://codepen.io/hbuchel/pen/fe993000a2eb92f8224134b0d7caf456?editors=110" target="_blank">Making Inline SVG Responsive in IE</a>
+        </h1>
+      </div>
     </section>
   
     <section class="slide">
-      There is a great article with a more thorough explanation I highly recommend reading if you come across issues making your SVG's responsive with a lot of different techniques. [link to codrops] You definitely want to make sure you do some research and know what kind of browser support your project needs.
+      <div class="centerer">
+        <h1 class="align-center">
+          <a href="http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/">http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/</a>
+        </h1>
+      </div>
     </section>
 
     <section class="slide">
-      Another great thing about inline svg's, is that we can actually style the inner svg elements with CSS. This means you can do simple things like adding hover effects...
+      <div class="centerer">
+        <div class="subtitle">Inline SVG Fun!</div>
+        <h1>Adding Hover Effects</h1>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="centerer">
+        <p data-height="710" data-theme-id="0" data-slug-hash="OParQg" data-default-tab="result" data-user="hbuchel" class='codepen'>See the Pen <a href='http://codepen.io/hbuchel/pen/OParQg/'>OParQg</a> by Heather Buchel (<a href='http://codepen.io/hbuchel'>@hbuchel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+      </div>
     </section>
 
     <section class="slide">
@@ -530,7 +663,11 @@
     </section>
 
     <section class="slide">
-      Sidenote: SVG also has it's own animation system called SMIL (synchronized multimedia integration language). You can do some pretty cool things with it. [ show loading animation on codepen ] Unfortunately the browser support just isn't there. No version of internet explorer currently supports SMIL so it's almost preferrable, at least in my opinion, to just use a javascript library for that sort of thing. Snap.svg is one of my favorites 
+      <div class="centerer">
+        <h1>Sidenote: SMIL Animations</h1>
+        <p data-height="506" data-theme-id="0" data-slug-hash="qLxAB" data-default-tab="result" data-user="hbuchel" class='codepen'>See the Pen <a href='http://codepen.io/hbuchel/pen/qLxAB/'>Loading Animation with Morphing SVG!</a> by Heather Buchel (<a href='http://codepen.io/hbuchel'>@hbuchel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+      </div>
 
     </section>
 
