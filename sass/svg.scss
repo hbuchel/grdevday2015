@@ -134,6 +134,26 @@ hr {
 	margin: 0 auto;
 }
 
+
+.icon-test {
+  width: 64px;
+  height: 66px;
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url("/images/basic-sprite-example.svg");
+}
+.icon--save {
+  background-position: 0 0;
+}
+.icon--delete {
+  background-position: -64px 0;
+}
+.icon--add {
+	background-position: -128px 0;
+}
+.icon--event {
+	background-position: -192px 0;
+}
 /* Talk Title */
 .talk {
 	line-height: 1;

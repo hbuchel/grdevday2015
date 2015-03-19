@@ -646,8 +646,7 @@
 
     <section class="slide">
       <div class="centerer">
-        <div class="subtitle">Inline SVG Fun!</div>
-        <h1>Adding Hover Effects</h1>
+        <h1 class="align-center">Inline SVG Fun</h1>
       </div>
     </section>
 
@@ -659,40 +658,228 @@
     </section>
 
     <section class="slide">
-      or more advanced techniques with css3 animations.
+      <div class="centerer">
+        <p data-height="700" data-theme-id="13252" data-slug-hash="ZYVYRV" data-default-tab="result" data-user="hbuchel" class='codepen'>See the Pen <a href='http://codepen.io/hbuchel/pen/ZYVYRV/'>ZYVYRV</a> by Heather Buchel (<a href='http://codepen.io/hbuchel'>@hbuchel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+      </div>
     </section>
 
     <section class="slide">
-      <div class="centerer">
-        <h1>Sidenote: SMIL Animations</h1>
-        <p data-height="506" data-theme-id="0" data-slug-hash="qLxAB" data-default-tab="result" data-user="hbuchel" class='codepen'>See the Pen <a href='http://codepen.io/hbuchel/pen/qLxAB/'>Loading Animation with Morphing SVG!</a> by Heather Buchel (<a href='http://codepen.io/hbuchel'>@hbuchel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+      <div class="centerer align-center">
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" style="margin: 0 auto" version="1.1" x="0" y="0" width="55%" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
+        <defs>
+          <clipPath id="circle-clip">
+            <path class="clip" d="M101.807,123.37c10-0.352,18.193,5.401,18.193,5.401V0H0v128.771c0,0,9.701-5.227,17.069-5.227s10.464,6.314,20.877,6.314
+          c10.175,0,12.703-4.209,22.053-4.209s11.981,5.438,20.578,5.438S91.807,123.722,101.807,123.37z">
+          <animate id="morph-one" dur="1" begin="0" repeatCount="indefinite"
+                   attributeName="d" from="M101.807,123.37c10-0.352,18.193,5.401,18.193,5.401V0H0v128.771c0,0,9.701-5.227,17.069-5.227s10.464,6.314,20.877,6.314
+          c10.175,0,12.703-4.209,22.053-4.209s11.981,5.438,20.578,5.438S91.807,123.722,101.807,123.37z"
+               to="M101.807,123.37c10-0.352,18.193,5.401,18.193,5.401V0H0v128.771c0,0,9.701-5.227,17.069-5.227s10.464,6.314,20.877,6.314
+          c10.175,0,12.703-4.209,22.053-4.209s11.981,5.438,20.578,5.438S91.807,123.722,101.807,123.37z" values="M101.807,123.37c10-0.352,18.193,5.401,18.193,5.401V0H0v128.771c0,0,9.701-5.227,17.069-5.227s10.464,6.314,20.877,6.314
+          c10.175,0,12.703-4.209,22.053-4.209s11.981,5.438,20.578,5.438S91.807,123.722,101.807,123.37z;M101.807,135.303c10-0.352,18.193-6.531,18.193-6.531V0H0v128.771c0,0,9.701,4.952,17.069,4.952s10.464-9.299,20.877-9.299
+          c10.175,0,12.703,9.299,22.053,9.299s11.981-9.123,20.578-9.123S91.807,135.654,101.807,135.303z
+      ;M101.807,123.37c10-0.352,18.193,5.401,18.193,5.401V0H0v128.771c0,0,9.701-5.227,17.069-5.227s10.464,6.314,20.877,6.314
+          c10.175,0,12.703-4.209,22.053-4.209s11.981,5.438,20.578,5.438S91.807,123.722,101.807,123.37z"/>
+              
+        </path>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#circle-clip)">
+          <path class="logo" d="M84.995 62.896h-5.788v3.061h5.788c1.037 0 1.68-0.611 1.68-1.512C86.675 63.582 86.032 62.896 84.995 62.896zM86.211 55.411c0-0.828-0.68-1.368-1.43-1.368h-5.574v2.808h5.574C85.531 56.85 86.211 56.274 86.211 55.411zM60 0C26.863 0 0 26.863 0 60c0 33.138 26.863 60 60 60 33.138 0 60-26.862 60-60C120 26.863 93.138 0 60 0zM48.974 72.004h-7.217v-9.178h-8.54v9.178H26V47.996h7.217v8.495h8.54v-8.495h7.217V72.004zM69.094 72.004H52.836V47.996h7.218v17.672h9.04V72.004zM86.962 72.004H71.99V47.996h14.471c4.931 0 7.075 3.312 7.075 6.119 0 2.987-1.752 5.003-4.074 5.507C92.035 60.018 94 62.393 94 65.488 94 68.836 91.749 72.004 86.962 72.004z"/>
+        </g>
+        <style type="text/css">
+          .logo {
+            fill: #FE4365;
+          }
+
+          .clip {
+            -webkit-animation: slide 8s infinite;
+                    animation: slide 8s infinite;
+          }
+
+          @-webkit-keyframes slide {
+            from {
+              -webkit-transform: translateY(-135px);
+                      transform: translateY(-135px);
+            }
+            50% {
+              -webkit-transform: translateY(-5px);
+                      transform: translateY(-5px);
+            }
+            to {
+              -webkit-transform: translateY(-135px);
+                      transform: translateY(-135px);
+            }
+          }
+
+          @keyframes slide {
+            from {
+              -webkit-transform: translateY(-135px);
+                      transform: translateY(-135px);
+            }
+            50% {
+              -webkit-transform: translateY(-5px);
+                      transform: translateY(-5px);
+            }
+            to {
+              -webkit-transform: translateY(-135px);
+                      transform: translateY(-135px);
+            }
+
+
+        </style>
+      </svg>
       </div>
 
     </section>
 
     <section class="slide">
-      Sprites!
+      <div class="centerer">
+        <h1 class="align-center">Sprites</h1>
+        <div class="grids">
+          <div class="grid-2 align-center centerer">
+            <img src="/images/basic-sprite-example.svg" width="70%" />
+          </div>
+          <div class="grid centerer">
+            <ul>
+              <li>Less HTTP Requests</li>
+              <li>Better Performance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      This is where we get the real mileage with SVG. We can create SVG sprites the same way we create sprites with other file formats. We use svg sprites for the same reason we used our old bitmap sprites, typically a smaller total combined file size for all of our icons and less http requests which helps with performance.
     </section>
 
 
     <section class="slide">
       
-      Take for example the following icons converted into one svg. Our SVG code will look something like this, probably with each icon in it's own group.
+      <pre class="language-markup"><code>
+&lt;svg xmlns="http://www.w3.org/2000/svg" width="256px" height="66px" viewBox="0 0 256 66" version="1.1"&gt;
+  &lt;g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"&gt;
+      &lt;path id="Save" d="M36.74656 8.38344175L43.62656 8.38344175 43.62656 20.8252427 36.74656 20.8252427 36.74656 8.38344175 36.74656 8.38344175ZM52.32 0L0 0 0 66 64 66 64 11.6941748 52.32 0 52.32 0ZM15.12 4.80582524L47.68 4.80582524 47.68 24.3495146 15.12 24.3495146 15.12 4.80582524 15.12 4.80582524ZM54.77328 60.7667767L9.22672 60.7667767 9.22672 35.1892136 54.77328 35.1892136 54.77328 60.7667767 54.77328 60.7667767ZM50 42.6917476L14 42.6917476 14 39.4878641 50 39.4878641 50 42.6917476 50 42.6917476ZM50 46.3762136L14 46.3762136 14 49.5800971 50 49.5800971 50 46.3762136 50 46.3762136ZM50 53.2645631L14 53.2645631 14 56.4684466 50 56.4684466 50 53.2645631 50 53.2645631Z"  fill="#268BB4"/&gt;
+      &lt;g id="Delete" transform="translate(64.000000, 0.000000)" fill="#B12727"&gt;
+        &lt;path d="M64 32C64 49.673165 49.673165 64 32 64 14.326835 64 0 49.673165 0 32 0 14.326835 14.326835 0 32 0 49.673165 0 64 14.326835 64 32L64 32ZM42.7695534 48.5421359L32.3109903 38.0840388 21.8521165 48.5433786 16.2344078 42.9222524 26.6909515 32.464466 16.2333204 22.0074563 21.8542913 16.3897476 32.3102136 26.8442718 42.7645825 16.3885049 48.3867961 22.0071456 37.9305631 32.4638447 48.3880388 42.919767 42.7695534 48.5421359 42.7695534 48.5421359Z" id="x-mark-4-icon"/&gt;
+      &lt;/g&gt;
+      &lt;g id="Add" transform="translate(128.000000, 0.000000)">
+        &lt;path d="M64 32C64 49.673165 49.673165 64 32 64 14.326835 64 0 49.673165 0 32 0 14.326835 14.326835 0 32 0 49.673165 0 64 14.326835 64 32L64 32ZM57.7864078 32C57.7864078 17.7467961 46.2511845 6.21359223 32 6.21359223 17.7467961 6.21359223 6.21359223 17.7489709 6.21359223 32 6.21359223 46.2532039 17.7488155 57.7864078 32 57.7864078 46.2532039 57.7864078 57.7864078 46.2510291 57.7864078 32L57.7864078 32ZM48.7269903 37.039068L36.8838835 37.039068 36.8838835 48.8818641 27.7379417 48.8818641 27.7379417 37.039068 15.894835 37.039068 15.894835 27.8931262 27.7379417 27.8931262 27.7379417 16.0500194 36.8838835 16.0500194 36.8838835 27.8931262 48.7269903 27.8931262 48.7269903 37.039068 48.7269903 37.039068Z" id="plus-5-icon" fill="#95C75D"/&gt;
+      &lt;/g&gt;
+      &lt;path id="Calendar" d="M214.90532 38.3335431L205.755029 38.3335431 205.755029 28.9953282 214.90532 28.9953282 214.90532 38.3335431 214.90532 38.3335431ZM228.730408 28.9953282L219.580272 28.9953282 219.580272 38.3335431 228.730408 38.3335431 228.730408 28.9953282 228.730408 28.9953282ZM242.55565 28.9953282L233.405359 28.9953282 233.405359 38.3335431 242.55565 38.3335431 242.55565 28.9953282 242.55565 28.9953282ZM214.90532 42.6291472L205.755029 42.6291472 205.755029 51.9676791 214.90532 51.9676791 214.90532 42.6291472 214.90532 42.6291472ZM228.730408 42.6291472L219.580272 42.6291472 219.580272 51.9676791 228.730408 51.9676791 228.730408 42.6291472 228.730408 42.6291472ZM242.555495 42.6291472L233.405359 42.6291472 233.405359 51.9676791 242.555495 51.9676791 242.555495 42.6291472 242.555495 42.6291472ZM245.96334 10.1432443C245.96334 11.7341207 244.69965 13.0239434 243.140816 13.0239434 241.581981 13.0239434 240.318136 11.7341207 240.318136 10.1432443L240.318136 2.89369882C240.318136 1.30298091 241.581981 0.0131582207 243.140816 0.0131582207 244.69965 0.0131582207 245.96334 1.30298091 245.96334 2.89369882L245.96334 10.1432443 245.96334 10.1432443ZM207.827417 2.88069913C207.827417 1.28982269 206.563573 8.8817842e-16 205.004893 8.8817842e-16 203.445903 8.8817842e-16 202.182214 1.28982269 202.182214 2.88069913L202.182214 10.1300861C202.182214 11.7209625 203.445903 13.0107852 205.004893 13.0107852 206.563573 13.0107852 207.827417 11.7209625 207.827417 10.1300861L207.827417 2.88069913 207.827417 2.88069913ZM249.375068 7.08673229L249.375068 10.0379785C249.375068 13.5463089 246.57833 16.4005331 243.140816 16.4005331 239.703146 16.4005331 236.906408 13.5463089 236.906408 10.0379785L236.906408 7.08673229 211.239146 7.08673229 211.239146 10.0248203C211.239146 13.5331507 208.442408 16.3873748 205.004893 16.3873748 201.567223 16.3873748 198.770485 13.5331507 198.770485 10.0248203L198.770485 7.08673229 192 7.08673229 192 64 256 64 256 7.08673229 249.375068 7.08673229 249.375068 7.08673229ZM249.786408 57.6586888L198.213592 57.6586888 198.213592 22.3897429 249.786408 22.3897429 249.786408 57.6586888 249.786408 57.6586888Z" fill="#9D68B1"/&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
+
+
+
+      </code></pre>
     </section>
 
     <section class="slide">
-      Then, in our css, we can reference the svg as our background image.
-
-      The one caveat to this technique for using svg's, is we can't style the inner svg elements with CSS like we can with our inline svg's. But if you're making your own icon system this is a very easy starting point that's easily adaptable from our older bitmap spriting techniques, and now we no longer need 2x or 4x files for high-resolution screens.
-
-      I've probably used this technique a lot.
+      <pre class="language-css"><code>
+.icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("images/sprite.svg");
+  background-size: 32px 32px;
+}
+.icon--save {
+  background-position: 0 0;
+}
+.icon--delete {
+  background-position: -32px 0;
+}
+.icon--add {
+  background-position: -64px 0;
+}
+.icon--event {
+  background-position: -96px 0;
+}
+      </code></pre>
     </section>
 
     <section class="slide">
-      My favorite "newest" technique for SVG spriting is what I'll call "inline spriting". Before we talked about how we could write inline SVG's. Well we can take our SVG sprite that we created and place that in our markup. Let's place it at the bottom of our template.
+      <pre class="language-markup"><code>
+&lt;span class="icon icon--save"&gt;&lt;/span&gt; Save
+&lt;span class="icon icon--delete"&gt;&lt;/span&gt; Delete
+&lt;span class="icon icon--add"&gt;&lt;/span&gt; Add
+&lt;span class="icon icon--event"&gt;&lt;/span&gt; Event
+      </code></pre>
+
+      <div class="grids">
+        <div class="grid">
+          <span class="icon-test icon--save"></span> Save
+        </div>
+        <div class="grid">
+          <span class="icon-test icon--delete"></span> Delete
+        </div>
+        <div class="grid">
+          <span class="icon-test icon--add"></span> Add
+        </div>
+        <div class="grid">
+          <span class="icon-test icon--event"></span> Event
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="centerer align-center">
+        <h1>SVG as CSS Background Images are great for Sprites</h1>
+        <p>Just remember, you can't "style" an svg loaded as a background image or as the src attribute of an image tag like you can an inline svg.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="centerer align-center">
+        <h1>Inline SVG Spriting</h1>
+        <p>There is a clever way to keep your sprite "stylable".</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="centerer align-center">
+        <img src="images/inlinesvg-notstacked.svg" />
+      </div>
+    </section>
+
+    <section class="slide">
+    <pre class="language-markup"><code>
+&lt;svg width="115px" height="115px" viewBox="0 0 115 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+    &lt;g id="Menu"&gt;
+        &lt;circle id="MenuCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5">&lt;/circle&gt;
+        &lt;g id="Bars" transform="translate(33.000000, 33.000000)" fill="#FFFFFF"&gt;
+            &lt;rect id="BarBottom" x="0" y="41" width="50" height="9"&gt;&lt;/rect&gt;
+            &lt;rect id="BarMiddle" x="0" y="21" width="50" height="9"&gt;&lt;/rect&gt;
+            &lt;rect id="BarTop" x="0" y="0" width="50" height="9"&gt;&lt;/rect&gt;
+        &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="Add"&gt;
+        &lt;circle id="AddCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5"&gt;&lt;/circle&gt;
+        &lt;path d="M65,51 L65,25 L51,25 L51,51 L25,51 L25,65 L51,65 L51,91 L65,91 L65,65 L91,65 L91,51 L65,51 Z" id="PlusSign" fill="#FFFFFF"&gt;&lt;/path&gt;
+    &lt;/g&gt;
+    &lt;g id="Arrow"&gt;
+        &lt;circle id="ArrowCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5">&lt;/circle&gt;
+        &lt;path d="M58.7223777,29 L49.5539225,38.1249239 L62.2099163,50.8414019 L28,50.8414019 L28,64.3685981 L62.2099163,64.3685981 L49.5539225,77.0850761 L58.7223777,86.21 L87.1911805,57.605 L58.7223777,29 Z" id="ArrowIcon" fill="#FFFFFF"&gt;&lt;/path&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;     
+    </code></pre>
+    </section>
+
+    <section class="slide">
+      <div class="centerer">
+        <pre class="language-markup"><code>
+        &lt;html&gt;
+        ...
+        &lt;body&gt;
+          &lt;div&gt;divs and stuff&lt;/div&gt;
+          ...
+          &lt;svg&gt;....&lt;/svg&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;  
+        </code></pre>
+      </div>
     </section>
 
     <section class="slide">
@@ -892,5 +1079,24 @@ CSS sprites are annoying. I hate aligning all of the SVG's. I hate calculating a
     $.deck('.slide');
   });
 </script>
+
+<svg style="display: none;" viewBox="0 0 115 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <symbol id="Menu" viewBox="0 0 115 115">
+        <circle id="MenuCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5"></circle>
+        <g id="Bars" transform="translate(33.000000, 33.000000)" fill="#FFFFFF">
+            <rect id="BarBottom" x="0" y="41" width="50" height="9"></rect>
+            <rect id="BarMiddle" x="0" y="21" width="50" height="9"></rect>
+            <rect id="BarTop" x="0" y="0" width="50" height="9"></rect>
+        </g>
+    </symbol>
+    <symbol id="Add" viewBox="0 0 115 115">
+        <circle id="AddCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5"></circle>
+        <path d="M65,51 L65,25 L51,25 L51,51 L25,51 L25,65 L51,65 L51,91 L65,91 L65,65 L91,65 L91,51 L65,51 Z" id="PlusSign" fill="#FFFFFF"></path>
+    </symbol>
+    <symbol id="Arrow" viewBox="0 0 115 115">
+        <circle id="ArrowCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5"></circle>
+        <path d="M58.7223777,29 L49.5539225,38.1249239 L62.2099163,50.8414019 L28,50.8414019 L28,64.3685981 L62.2099163,64.3685981 L49.5539225,77.0850761 L58.7223777,86.21 L87.1911805,57.605 L58.7223777,29 Z" id="ArrowIcon" fill="#FFFFFF"></path>
+    </symbol>
+</svg>
 </body>
 </html>
