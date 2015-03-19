@@ -834,7 +834,48 @@
     <section class="slide">
       <div class="centerer align-center">
         <h1>Inline SVG Spriting</h1>
-        <p>There is a clever way to keep your sprite "stylable".</p>
+        <p>There is a clever way to keep your sprite a <em>little</em> more "stylable".</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="centerer align-center">
+        <h1>currentColor</h1>
+        <p>
+          The computed value of the ‘currentColor’ keyword is the computed value of the ‘color’ property.
+        </p>
+        <p class="small-text">
+          http://www.w3.org/TR/css3-color/#currentcolor
+        </p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="grids">
+        <div class="grid centerer">
+          <pre class="language-css"><code>
+.parent-div {
+  color: red;
+}            
+.child-div {
+  border: 5px solid currentColor;
+}
+          </code></pre>
+        </div>
+        <div class="slide grid centerer">
+          <pre class="language-markup"><code>
+&lt;div class="parent-div"&gt;
+  I'll have red text when rendered.
+  &lt;div class="child-div"&gt;
+    I'll have a red border when rendered.
+  &lt;/div&gt;
+&lt;/div&gt;            
+          </code></pre>
+          <div class="parent-div">
+            I'll have red text when rendered.
+            <div class="child-div">I'll have a red border when rendered.</div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -848,7 +889,7 @@
     <pre class="language-markup"><code>
 &lt;svg width="115px" height="115px" viewBox="0 0 115 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
     &lt;g id="Menu"&gt;
-        &lt;circle id="MenuCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5">&lt;/circle&gt;
+        &lt;circle id="MenuCircle" fill="currentColor" cx="57.5" cy="57.5" r="57.5">&lt;/circle&gt;
         &lt;g id="Bars" transform="translate(33.000000, 33.000000)" fill="#FFFFFF"&gt;
             &lt;rect id="BarBottom" x="0" y="41" width="50" height="9"&gt;&lt;/rect&gt;
             &lt;rect id="BarMiddle" x="0" y="21" width="50" height="9"&gt;&lt;/rect&gt;
@@ -856,11 +897,11 @@
         &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="Add"&gt;
-        &lt;circle id="AddCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5"&gt;&lt;/circle&gt;
+        &lt;circle id="AddCircle" fill="currentColor" cx="57.5" cy="57.5" r="57.5"&gt;&lt;/circle&gt;
         &lt;path d="M65,51 L65,25 L51,25 L51,51 L25,51 L25,65 L51,65 L51,91 L65,91 L65,65 L91,65 L91,51 L65,51 Z" id="PlusSign" fill="#FFFFFF"&gt;&lt;/path&gt;
     &lt;/g&gt;
     &lt;g id="Arrow"&gt;
-        &lt;circle id="ArrowCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5">&lt;/circle&gt;
+        &lt;circle id="ArrowCircle" fill="currentColor" cx="57.5" cy="57.5" r="57.5">&lt;/circle&gt;
         &lt;path d="M58.7223777,29 L49.5539225,38.1249239 L62.2099163,50.8414019 L28,50.8414019 L28,64.3685981 L62.2099163,64.3685981 L49.5539225,77.0850761 L58.7223777,86.21 L87.1911805,57.605 L58.7223777,29 Z" id="ArrowIcon" fill="#FFFFFF"&gt;&lt;/path&gt;
     &lt;/g&gt;
 &lt;/svg&gt;     
@@ -883,35 +924,138 @@
     </section>
 
     <section class="slide">
-       Now we want to be able to reference each little icon on it's own. So let's wrap each element in it's own symbol element and give each of them it's own unique ID. The MDN describes the svg symbol element as a way to define graphical template objects which can be instantiated by a <use> element. This also means that our symbol element itself is not rendered, only instances of it are rendered.
+      <div class="grids">
+        <div class="grid centerer">
+          <pre class="language-markup"><code>
+&lt;svg&gt;
+  &lt;g id="Menu"> ... &lt;/g&gt;
+  &lt;g id="Add"> ... &lt;/g&gt;
+  &lt;g id="Arrow"> ... &lt;/g&gt;
+&lt;/svg&gt;           
+          </code></pre>
+        </div>
+        <div class="slide grid centerer">
+          <pre class="language-markup"><code>
+&lt;svg&gt;
+  &lt;symbol id="Menu"&gt;&lt;/symbol&gt;
+  &lt;symbol id="Add"&gt;&lt;/symbol&gt;
+  &lt;symbol id="Arrow"&gt;&lt;/symbol&gt;
+&lt;/svg&gt;            
+          </code></pre>
+        </div>
+      </div>
     </section>
- 
-    <section class="slide">
-       Before we get to the <use> element, let's take care of some responsiveness. Let's move the viewbox onto each symbol element and let it equal the viewbox for that individual icon, instead of the entire svg. Now we've created a symbol out of each icon, and we can reference that elsewhere using the <use> element. this is going to be handy because, unlike this very basic example, our svg path's are usually going to be pretty complex. It's a lot of markup to kind of weed through and paste everywhere we want that icon.
-    </section>
 
-    <section class="slide">
-      
-      If we go back up to our HTMl, we can create a simpler way for us to reference this icon. Say we want our square icon to show up. We'll create a wrapper, because for IE we're going to need that anyways.
-      <div class="icon"></div> (test if I need this for IE)
-    </section>
-
-    <section class="slide">
-      Then we'll add our SVG code.
-
-       <div class="icon">
-         <svg>
-           <use xlink:href="#square" />
-         </svg>
-       </div>
-
-
-        This is a little more markup then we would need for our background image svg sprites. BUT now we can do some cool things with recoloring it that we definitely couldn't do before with our older spriting techniques.
-    </section>
+   
 
     <section class="slide">
-      If you set the fill of your path elements to currentColor, you can very easily restyle them with just the color property in your css. This is kind of cool for making the icon immediately take on the color of it's parent link, for example.
+      <div class="centerer align-center">
+        <h1>
+          &lt;symbol&gt;
+        </h1>
+        <p>
+          The MDN describes the svg symbol element as a way to define graphical template objects which can be instantiated by a &lt;use&gt; element. This also means that our symbol element itself is not rendered, only instances of it are rendered.
+        </p>
+      </div>
+       
     </section>
+
+    <section class="slide">
+      <div class="centerer">
+        <h1>Let's make our icons responsive!</h1>
+        <pre class="language-markup"><code>
+&lt;svg&gt;
+  &lt;symbol id="Menu" viewBox="0 0 115 115"&gt;&lt;/symbol&gt;
+  &lt;symbol id="Add" viewBox="0 0 115 115"&gt;&lt;/symbol&gt;
+  &lt;symbol id="Arrow" viewBox="0 0 115 115"&gt;&lt;/symbol&gt;
+&lt;/svg&gt;            
+          </code></pre>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="centerer">
+        
+            <pre class="language-markup"><code>
+&lt;div class="icn"&gt;&lt;/div&gt;
+            </code></pre>
+         
+            <div class="slide">
+              <pre class="language-markup"><code>
+&lt;div class="icn"&gt;
+  &lt;svg&gt;
+
+  &lt;/svg&gt;
+&lt;/div&gt;
+              </code></pre>
+            </div>
+
+            <div class="slide">
+              <pre class="language-markup"><code>
+&lt;div class="icn"&gt;
+  &lt;svg&gt;
+    &lt;use xlink:href="#Arrow" /&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;
+              </code></pre>
+            </div>
+         
+      </div>   
+    </section>
+
+    <section class="slide">
+      <div class="centerer">
+        <div class="grids">
+          <div class="grid">
+          <pre class="language-css"><code>
+.icn {
+  color: #111;
+} 
+          </code></pre>
+            <div class="icn">
+              <svg>
+                <use xlink:href="#Arrow" />
+              </svg>
+            </div>
+          </div>
+          <div class="slide grid">
+            <pre class="language-css"><code>
+.icn--bright {
+  color: #C02942;
+}    
+.icn--small {
+  width: 34px;
+  height: 34px;
+}          
+            </code></pre>
+            <div class="icn icn--bright icn--small">
+              <svg>
+                <use xlink:href="#Arrow" />
+              </svg>
+            </div>
+          </div>
+          <div class="slide grid">
+            <pre class="language-css"><code>
+.icn--dull {
+  color: #888;
+}
+.icn--medium {
+  width: 80px;
+  height: 80px;
+}              
+            </code></pre>
+            <div class="icn icn--dull icn--medium">
+              <svg>
+                <use xlink:href="#Arrow" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    
 
 
     <section class="slide">
@@ -1082,7 +1226,7 @@ CSS sprites are annoying. I hate aligning all of the SVG's. I hate calculating a
 
 <svg style="display: none;" viewBox="0 0 115 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <symbol id="Menu" viewBox="0 0 115 115">
-        <circle id="MenuCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5"></circle>
+        <circle id="MenuCircle" class="base-circle" fill="#currentColor" cx="57.5" cy="57.5" r="57.5"></circle>
         <g id="Bars" transform="translate(33.000000, 33.000000)" fill="#FFFFFF">
             <rect id="BarBottom" x="0" y="41" width="50" height="9"></rect>
             <rect id="BarMiddle" x="0" y="21" width="50" height="9"></rect>
@@ -1090,11 +1234,11 @@ CSS sprites are annoying. I hate aligning all of the SVG's. I hate calculating a
         </g>
     </symbol>
     <symbol id="Add" viewBox="0 0 115 115">
-        <circle id="AddCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5"></circle>
+        <circle id="AddCircle" class="base-circle" fill="currentColor" cx="57.5" cy="57.5" r="57.5"></circle>
         <path d="M65,51 L65,25 L51,25 L51,51 L25,51 L25,65 L51,65 L51,91 L65,91 L65,65 L91,65 L91,51 L65,51 Z" id="PlusSign" fill="#FFFFFF"></path>
     </symbol>
     <symbol id="Arrow" viewBox="0 0 115 115">
-        <circle id="ArrowCircle" fill="#000000" cx="57.5" cy="57.5" r="57.5"></circle>
+        <circle id="ArrowCircle" fill="currentColor" class="base-circle" cx="57.5" cy="57.5" r="57.5"></circle>
         <path d="M58.7223777,29 L49.5539225,38.1249239 L62.2099163,50.8414019 L28,50.8414019 L28,64.3685981 L62.2099163,64.3685981 L49.5539225,77.0850761 L58.7223777,86.21 L87.1911805,57.605 L58.7223777,29 Z" id="ArrowIcon" fill="#FFFFFF"></path>
     </symbol>
 </svg>
