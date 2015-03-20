@@ -1,0 +1,18 @@
+<svg viewBox="0 0 115 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <symbol id="Menu" viewBox="0 0 115 115">
+        <circle id="MenuCircle" class="base-circle" fill="#currentColor" cx="57.5" cy="57.5" r="57.5"></circle>
+        <g id="Bars" transform="translate(33.000000, 33.000000)" fill="#FFFFFF">
+            <rect id="BarBottom" x="0" y="41" width="50" height="9"></rect>
+            <rect id="BarMiddle" x="0" y="21" width="50" height="9"></rect>
+            <rect id="BarTop" x="0" y="0" width="50" height="9"></rect>
+        </g>
+    </symbol>
+    <symbol id="Add" viewBox="0 0 115 115">
+        <circle id="AddCircle" class="base-circle" fill="currentColor" cx="57.5" cy="57.5" r="57.5"></circle>
+        <path d="M65,51 L65,25 L51,25 L51,51 L25,51 L25,65 L51,65 L51,91 L65,91 L65,65 L91,65 L91,51 L65,51 Z" id="PlusSign" fill="#FFFFFF"></path>
+    </symbol>
+    <symbol id="Arrow" viewBox="0 0 115 115">
+        <circle id="ArrowCircle" fill="currentColor" class="base-circle" cx="57.5" cy="57.5" r="57.5"></circle>
+        <path d="M58.7223777,29 L49.5539225,38.1249239 L62.2099163,50.8414019 L28,50.8414019 L28,64.3685981 L62.2099163,64.3685981 L49.5539225,77.0850761 L58.7223777,86.21 L87.1911805,57.605 L58.7223777,29 Z" id="ArrowIcon" class="arrow-icon" style="transform: inherit;" fill="#FFFFFF"></path>
+    </symbol>
+</svg>
