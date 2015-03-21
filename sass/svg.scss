@@ -91,14 +91,46 @@ body {
 .margin-auto {
 	margin: 0 auto;
 }
-
+/* links */
+a {
+	text-decoration: none;
+	padding-bottom: 10px;
+	color: $teal;
+	border-bottom: 1px solid $teal;
+}
 /* text */
+.align-middle {
+	vertical-align: middle;
+	display: inline-block;
+}
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 }
 h1 {
 	color: $blue;
 	font-size: 4rem;
+}
+ul {
+	margin: 2rem 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+	padding: 0 0 0 20px;
+	margin: 0 0 1rem 0;
+	padding-left: 30px;
+	position: relative;
+	&:before {
+		position: absolute;
+		top: 12px;
+		left: 0;
+		content: '';
+		display: block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: $blue;
+	}
 }
 .reg {
 	font-weight: 300;
@@ -138,6 +170,10 @@ hr {
 	height: 1px;
 	border: none;
 	background: #333;
+}
+
+.small-text {
+	font-size: 1.6rem;
 }
 
 /* icons */
@@ -247,6 +283,7 @@ hr {
 .label {
 	text-transform: uppercase;
 	font-size: 1.5rem;
+	display: block;
 }
 .value {
 	font-size: 2.4rem;
